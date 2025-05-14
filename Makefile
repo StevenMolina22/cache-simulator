@@ -5,7 +5,7 @@ LIBS:=-lm
 all: cachesim
 
 run:
-	cargo run traces/blowfish.xex 1024 2 32
+	cargo run traces/adpcm.xex 2048 2 64 -v 0 15000
 
 build:
 	cargo build

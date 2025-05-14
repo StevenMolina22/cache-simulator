@@ -1,4 +1,7 @@
 datalab/
 asmlab/
 microlab/
+target/
 .venv/
+
+out_file.txt

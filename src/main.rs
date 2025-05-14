@@ -32,7 +32,7 @@ fn main() -> io::Result<()> {
 
     let line_iter = LineIterator::new(in_file, Sizes::new(c, s, e));
 
-    for line in line_iter.take(100) {
+    for line in line_iter {
         cache.insert(&line)?;
         println!("{:?}", line);
     }
