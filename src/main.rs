@@ -15,7 +15,7 @@ mod types;
 
 fn main() -> io::Result<()> {
     let args: Vec<String> = env::args().collect();
-    // let args = vec!["", "trazas/blowfish.xex", "1024", "2", "32"];
+    // let args = vec!["", "traces/blowfish.xex", "1024", "2", "32"];
     let in_file = File::open(&args[1])?;
     let out_file = OpenOptions::new()
         .write(true)
@@ -23,7 +23,7 @@ fn main() -> io::Result<()> {
         .truncate(true)
         .open("out_file.txt")?;
 
-    // trazas/blowfish.xex 1024 2 32 | file c e s
+    // traces/blowfish.xex 1024 2 32 | file c e s
     let c = args[2].parse().unwrap();
     let e = args[3].parse().unwrap();
     let s = args[4].parse().unwrap();
