@@ -13,7 +13,7 @@ build:
 debug: build
 	rust-gdb --args target/debug/cachelab traces/blowfish.xex 1024 2 32
 
-debug_llbm: build
+debug_lldb: build
 	rust-lldb target/debug/cachelab traces/blowfish.xex 1024 2 32
 
 cachesim:
