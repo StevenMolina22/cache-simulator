@@ -60,7 +60,7 @@ CacheSim leverages Rust's performance and memory safety features, featuring a mo
 
 1. **Clone the Repository**:
    ```bash
-   git clone <repository_url>
+   git clone github.com/StevenMolina22/cache-simulator
    ```
 2. **Build the Project**:
    ```bash
@@ -79,7 +79,7 @@ Run CacheSim using the following syntax:
 ./cachesim <trace_file> <cache_size> <associativity> <sets> [-v <start_op> <end_op>]
 ```
 
-#### Parameters
+**Parameters**
 
 - `<trace_file>`: Path to the trace file containing memory access operations.
 - `<cache_size>`: Cache size in bytes (e.g., 2048 for 2KB).
@@ -87,7 +87,7 @@ Run CacheSim using the following syntax:
 - `<sets>`: Number of cache sets (e.g., 8).
 - `[-v <start_op> <end_op>]`: Optional flag to enable verbose mode for operations from `<start_op>` to `<end_op>` (inclusive).
 
-#### Example
+**Example**
 
 ```bash
 ./cachesim blowfish.xex 2048 4 8

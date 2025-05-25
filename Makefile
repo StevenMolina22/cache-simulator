@@ -5,16 +5,16 @@ LIBS:=-lm
 all: cachesim
 
 run:
-	cargo run trazas/blowfish.xex 1024 2 32
+	cargo run traces/adpcm.xex 2048 2 64 -v 0 15000
 
 build:
 	cargo build
 
 debug: build
-	rust-gdb --args target/debug/cachelab trazas/blowfish.xex 1024 2 32
+	rust-gdb --args target/debug/cachelab traces/blowfish.xex 1024 2 32
 
-debug_llbm: build
-	rust-lldb target/debug/cachelab trazas/blowfish.xex 1024 2 32
+debug_lldb: build
+	rust-lldb target/debug/cachelab traces/blowfish.xex 1024 2 32
 
 cachesim:
 	cargo build --release
