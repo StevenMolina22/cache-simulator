@@ -5,3 +5,6 @@ target/
 .venv/
 
 out_file.txt
+traces/
+output/
+.idea/
